@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 using namespace std;
 
 
@@ -12,10 +12,10 @@ void main()
 
 	for (int i = 0; i < size; i++)
 	{
-		cout << "Введите " << i << " элемент массива:"; cin >> arr[i];
+		cout << "Р’РІРµРґРёС‚Рµ " << i << " СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°:"; cin >> arr[i];
 	}
 
-	//вывод в прямом порядке
+	//РІС‹РІРѕРґ РІ РїСЂСЏРјРѕРј РїРѕСЂСЏРґРєРµ
 	for (int i = 0; i < size; i++)
 	{
 		cout << arr[i] << endl;;
@@ -23,23 +23,23 @@ void main()
 
 	cout << "-----------------------" << endl;
 
-	//вывод в обратном порядке
+	//РІС‹РІРѕРґ РІ РѕР±СЂР°С‚РЅРѕРј РїРѕСЂСЏРґРєРµ
 	for (int i = size - 1; i >= 0; i--)
 	{
 		cout << arr[i] << endl;
 	}
 
-	//сумма элементов массива
+	//СЃСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
 	int sum = 0;
 	for (int i = 0; i < size; i++)
 	{
 		sum += arr[i];
 	}
-	cout << "Сумма: " << sum << endl;
+	cout << "РЎСѓРјРјР°: " << sum << endl;
 
 	int average;
 	average = sum / size;
-	cout << "Среднее: " << average << endl;
+	cout << "РЎСЂРµРґРЅРµРµ: " << average << endl;
 
 	int max = arr[0], min = arr[0];
 	for (int i = 1; i < size; i++)
@@ -47,6 +47,6 @@ void main()
 		max = arr[i] > max ? arr[i] : max;
 		min = arr[i] < min ? arr[i] : min;
 	}
-	cout << "Максимальное значение: " << max << endl;
-	cout << "Минимальное значение: " << min << endl;
+	cout << "РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ: " << max << endl;
+	cout << "РњРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ: " << min << endl;
 }
