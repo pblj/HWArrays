@@ -72,16 +72,13 @@ void main()
 	unsigned int number;
 	cout << "Введите число для конвертации в шестнадцатеричную ситстему счисления: "; cin >> number;
 
-	int hex[100];
-	int i = 0;
-	for (i; i < 100; i++)
-	{
-		hex[i] = number - (number % 16);
+	const char hex[16]{0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F' };
+	int digit;
+	while (number > 0) {
+
+		digit = number % 16;
 		number /= 16;
-		if (number == 0)
-		{
-			break;
-		}
+
 	}
 
 }
